@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ArtistViewerController">
+   <children>
+      <AnchorPane prefHeight="386.0" prefWidth="305.0">
+         <children>
+            <TitledPane layoutX="3.0" layoutY="1.0" prefHeight="67.0" prefWidth="299.0">
+               <content>
+                  <Label prefHeight="30.0" prefWidth="79.0" text=" Artists">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </content>
+            </TitledPane>
+            <ScrollPane layoutX="2.0" layoutY="67.0" prefHeight="285.0" prefWidth="299.0">
+               <content>
+                  <ListView fx:id="ArtistsListBox" onMouseClicked="#playArtist" prefHeight="281.0" prefWidth="296.0" />
+               </content>
+            </ScrollPane>
+            <Button layoutX="239.0" layoutY="360.0" mnemonicParsing="false" onAction="#MenuScreen" text="Return" />
+            <TextField fx:id="screen" layoutX="14.0" layoutY="360.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

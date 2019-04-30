@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="403.0" prefWidth="265.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AlbumViewerController">
+   <children>
+      <TitledPane prefHeight="27.0" prefWidth="265.0" AnchorPane.bottomAnchor="376.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <graphic>
+            <Pane prefHeight="0.0" prefWidth="200.0" />
+         </graphic>
+      </TitledPane>
+      <Label layoutX="80.0" layoutY="35.0" prefHeight="34.0" prefWidth="132.0" text="Albums">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutX="9.0" layoutY="77.0" prefHeight="299.0" prefWidth="245.0">
+         <content>
+            <ListView fx:id="AlbumsListBox" onMouseClicked="#playAlbum" prefHeight="299.0" prefWidth="245.0" />
+         </content></ScrollPane>
+      <Button layoutX="192.0" layoutY="377.0" mnemonicParsing="false" onAction="#MenuScreen" prefHeight="25.0" prefWidth="70.0" text="Back" />
+   </children>
+</AnchorPane>
